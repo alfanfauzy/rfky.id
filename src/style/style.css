@@ -10,7 +10,12 @@ body {
   line-height: 32.4px;
   font-family: "Montserrat";
   font-weight: 400;
-  background-color: #e5e5e5;
+}
+
+.container {
+  background-color: white;
+  width: 100vw;
+  box-sizing: border-box;
 }
 
 header {
@@ -213,7 +218,7 @@ header {
   line-height: 41.45px;
 }
 
-.interest button:nth-child(1) {
+.interest .button-project {
   height: 72px;
   width: 200px;
   background-color: transparent;
@@ -223,7 +228,7 @@ header {
   line-height: 21.94px;
 }
 
-.interest button:nth-child(2) {
+.interest .button-mail {
   width: 200px;
   height: 72px;
   background-color: black;
@@ -232,4 +237,114 @@ header {
   font-size: 1rem;
   line-height: 21.94px;
   font-weight: 600;
+}
+
+.started {
+  background-color: #d6dadd;
+  display: flex;
+  padding: 82px 155px 54px 155px;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.started-hero {
+  margin-right: 72px;
+  background-color: #c4c7ca;
+  position: relative;
+  height: 245px;
+  width: 387px;
+}
+
+.started-hero img {
+  width: 294px;
+  height: 342px;
+  position: relative;
+  top: -96px;
+  left: 0;
+  right: 0;
+}
+
+.started-text h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 41.45px;
+  margin-bottom: 32px;
+}
+
+.started-text p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 34px;
+  margin-bottom: 43px;
+}
+
+.started-text button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
+
+.started-text button img {
+  margin-right: 5px;
+}
+
+.hire-me {
+  padding: 31px 155px 95px 155px;
+}
+
+.hire-me h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 41.45px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.card-hire-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-hire-me {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 23px;
+}
+
+.card-hire-image {
+  background-color: white;
+  border: 1px solid #c4c4c4;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hire-image {
+  background-color: #c4c4c4;
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+}
+
+.card-hire-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 34px;
+  margin-bottom: 24px;
+}
+.card-hire-text {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
 }
