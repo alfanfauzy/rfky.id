@@ -6,6 +6,7 @@
 }
 
 body {
+  overflow-x: hidden;
   font-size: 18px;
   line-height: 32.4px;
   font-family: "Montserrat";
@@ -100,7 +101,7 @@ header {
 
 .header-social-media {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -143,7 +144,7 @@ header {
   font-weight: 400;
   background-color: transparent;
   border: none;
-  margin-left: 60px;
+  margin-left: 3rem;
 }
 
 .featured-project {
@@ -159,6 +160,7 @@ header {
 
 .card-group {
   display: flex;
+  justify-content: space-between;
 }
 
 .card {
@@ -229,6 +231,9 @@ header {
 }
 
 .interest .button-mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 200px;
   height: 72px;
   background-color: black;
@@ -237,6 +242,16 @@ header {
   font-size: 1rem;
   line-height: 21.94px;
   font-weight: 600;
+}
+
+.interest-button {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.interest-button button {
+  margin-right: 5px;
 }
 
 .started {
@@ -284,6 +299,7 @@ header {
   align-items: center;
   background-color: transparent;
   border: none;
+  font-size: 1.2rem;
 }
 
 .started-text button img {
@@ -342,9 +358,83 @@ header {
   line-height: 34px;
   margin-bottom: 24px;
 }
+
 .card-hire-text {
   font-size: 0.8rem;
   font-weight: 400;
   line-height: 24px;
   text-align: center;
+}
+
+.testimonial {
+  background-color: #d6dadd;
+  padding: 10px 100px 0px 100px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-body {
+  justify-content: space-between;
+  display: flex;
+}
+
+.testimonial-image {
+  position: relative;
+  padding-left: 50px;
+  top: -55px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.testimonial-pagination {
+  margin-left: 35px;
+}
+
+.testimonial-text {
+  padding: 30px;
+}
+
+.testimonial-text p {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.testimonial-text h4 {
+  margin-bottom: 35px;
+  font-size: 1.8rem;
+}
+
+.testimonial-text h5 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+footer {
+  margin-top: 4rem;
+  background-color: #d6dadd;
+}
+
+.footer-body {
+  padding: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-body h4 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-body p {
+  font-size: 1.2rem;
+}
+
+.footer-left {
+  display: flex;
+  justify-content: space-around;
+  width: 15rem;
 }
